@@ -1,0 +1,114 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Form container styling */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    /* Limit the width for better readability */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form heading */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input fields styling */
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the width */
+}
+
+/* Gender checkbox styling */
+.form-container .gender-group {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Space between checkboxes */
+}
+
+.form-container .gender-group label {
+    font-weight: bold;
+    margin-right: 10px;
+    /* Space after "Gender:" label */
+}
+
+.form-container .gender-group input[type="checkbox"] {
+    margin-right: 5px;
+    /* Space between checkbox and label */
+}
+
+/* Button styling */
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button[type="button"] {
+    background-color: #28a745;
+    color: white;
+}
+
+.form-container button[type="button"]:hover {
+    background-color: #218838;
+}
+
+.form-container button[type="reset"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+.form-container button[type="reset"]:hover {
+    background-color: #c82333;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="date"],
+    .form-container input[type="email"],
+    .form-container input[type="tel"],
+    .form-container select {
+        font-size: 14px;
+    }
+
+    .form-container button {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Survey Form</title>
+    <link rel="stylesheet" href="survey_form.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Customer Survey Form</h2>
+        <form id="surveyForm">
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="date" id="dob" placeholder="dd-mm-yyyy" required>
+            <select id="country" required>
+                <option value="">Select Country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+            </select>
+            <div class="gender-group">
+                <label>Gender:</label>
+                <label><input type="checkbox" id="male" name="gender" value="Male"> Male</label>
+                <label><input type="checkbox" id="female" name="gender" value="Female"> Female</label>
+            </div>
+            <input type="text" id="profession" placeholder="Profession" required>
+            <input type="email" id="email" placeholder="Email" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <input type="tel" id="mobile" placeholder="Mobile Number" required pattern="[0-9]{10}">
+            <button type="button" id="submitBtn">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+    <script src="survey_from.js"></script>
+</body>
+
+</html>
